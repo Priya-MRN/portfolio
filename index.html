@@ -211,7 +211,7 @@
   }
 
   /* highlights */
-  .highlight-grid{ display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--line); }
+  .highlight-grid{ display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); }
   .highlight{ padding:30px 26px; border-left:1px solid var(--line); }
   .highlight:first-child{ border-left:none; padding-left:0; }
   .highlight .num{
@@ -241,6 +241,11 @@
   .exp-body h3{ font-family:"Bricolage Grotesque", sans-serif; font-size:1.12rem; font-weight:700; margin:0 0 6px; display:flex; align-items:center; gap:9px; }
   .exp-co{ font-family:"Newsreader", serif; font-weight:400; font-style:italic; color:var(--slate); font-size:0.85em; }
   .exp-body p{ margin:0; color:var(--ink-soft); font-size:0.97rem; max-width:64ch; }
+  .exp-body .role-note{ margin:0 0 12px; color:var(--slate); font-size:0.9rem; font-style:italic; max-width:64ch; }
+  .proj-list{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px; }
+  .proj-list li{ font-size:0.96rem; color:var(--ink-soft); max-width:66ch; padding-left:16px; position:relative; }
+  .proj-list li::before{ content:"›"; position:absolute; left:0; top:0; color:var(--violet-fill); font-family:"JetBrains Mono", monospace; font-weight:700; }
+  .proj-list b{ color:var(--ink); font-weight:700; }
 
   /* projects */
   .project-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; }
@@ -349,7 +354,7 @@
         <span class="eyebrow">~/portfolio $ whoami<span class="cursor" aria-hidden="true"></span></span>
         <h1 class="headline">I build backends that don't keep you up at night.</h1>
         <p class="who">Priyadharshini Arumugam — Software Engineer II, Backend &amp; Full-Stack</p>
-        <p class="lede">6+ years shipping REST APIs and services that stay up — across healthcare, education, ERP, and consumer platforms.</p>
+        <p class="lede">6+ years shipping REST APIs and full-stack platforms that stay up — across healthcare, education, manufacturing, and wellness.</p>
         <div class="stat-row">
           <span><b style="color:var(--violet-fill)">6+</b> yrs shipping</span>
           <span><b style="color:var(--green-fill)">4</b> industries</span>
@@ -381,7 +386,7 @@
         <div class="highlight">
           <div class="num" style="background:var(--violet-fill)">01</div>
           <h3>End-to-end ownership</h3>
-          <p>Schema design, the API on top of it, and the interface that calls it — I take features from scoping through production support.</p>
+          <p>From schema to shipped UI — I take features from a blank ticket through production support, not just the piece assigned to me.</p>
         </div>
         <div class="highlight">
           <div class="num" style="background:var(--green-fill)">02</div>
@@ -391,7 +396,12 @@
         <div class="highlight">
           <div class="num" style="background:var(--orange-fill)">03</div>
           <h3>Cross-platform delivery</h3>
-          <p>Comfortable shipping both sides — Laravel/Node APIs on the backend, Flutter apps and responsive UI on the front.</p>
+          <p>Laravel and Node APIs on the backend, Flutter and responsive UI on the front — I ship both sides of the stack.</p>
+        </div>
+        <div class="highlight">
+          <div class="num" style="background:var(--violet-fill)">04</div>
+          <h3>Learns fast, works either way</h3>
+          <p>New language, new framework, new legacy codebase — I get productive quickly, and I'm just as effective solo as embedded in a team.</p>
         </div>
       </div>
     </section>
@@ -401,11 +411,14 @@
       <h2 class="section-title">A little about me</h2>
       <div class="about-body">
         <p>
-          I'm a backend-leaning full-stack engineer who likes owning a feature end to end — from schema design
-          through the API to the interface that calls it. I've spent the last 6+ years across dental EMR, ERP,
-          education, and consumer platforms, and I'm usually the one who notices when a subscription webhook
-          quietly stops firing. Formally trained in biomedical engineering, which mostly taught me to be
-          suspicious of systems that look like they're working.
+          I'm a backend-leaning full-stack engineer who has spent 6+ years turning ambiguous requirements into
+          systems that hold up in production — designing the schema, building the API on top of it, and shipping
+          the interface that calls it. I've architected a dental EMR and a manufacturing ERP from scratch, rebuilt
+          a meditation platform's backend off a legacy CodeIgniter API, and spent two years owning a school ERP's
+          marks and events systems before any of that. Laravel, Flutter, and most of my API instincts were all
+          picked up on the job — I learn new stacks fast, and work just as well solo as embedded in a team.
+          Formally trained in biomedical engineering, which mostly taught me to be suspicious of systems that
+          look like they're working.
         </p>
         <div class="status-card">
           <div><span class="k">status</span> — <span style="color:var(--green-fill)">open to remote</span></div>
@@ -424,9 +437,12 @@
           <div class="exp-when">2025 — Present</div>
           <div class="exp-body">
             <h3><span class="lang-dot" style="background:var(--violet-fill)"></span>PHP / Full Stack Developer <span class="exp-co">— Interconnected Pty Ltd, Remote (Australia)</span></h3>
-            <p>Built the REST API and Express.js layers for a full-stack meditation platform, unified web and mobile
-            auth with Firebase, and rebuilt a legacy education platform from the ground up in Flutter with CMS,
-            portal, and scheduling modules.</p>
+            <p class="role-note">Full-stack across three products for a meditation and mindfulness company.</p>
+            <ul class="proj-list">
+              <li><b>Practice Self-Compassion (MSC).</b> Rebuilt the backend from CodeIgniter to Laravel end to end — full API and schema migration — then grew the frontend from a minimal shell into a complete course-creation and course-study platform with blogs, audio practices, and teacher profiles. Still actively building this one.</li>
+              <li><b>Jon Kabat-Zinn Meditations (JKZ).</b> Marketing site and the Teams portal — its B2B subscriptions product — handling ongoing improvements and bug fixes.</li>
+              <li><b>Hjärnfokus.</b> Upgraded the Flutter app across major version boundaries, auditing and replacing outdated dependencies for compatibility.</li>
+            </ul>
           </div>
         </div>
 
@@ -434,8 +450,9 @@
           <div class="exp-when">2024 — 2025</div>
           <div class="exp-body">
             <h3><span class="lang-dot" style="background:var(--green-fill)"></span>PHP Developer <span class="exp-co">— Crontus Pty Ltd, Remote (Australia)</span></h3>
-            <p>Worked across multiple interwoven Laravel projects in a shared system, contributing to REST API
-            design and third-party integrations while keeping changes safe across dependent services.</p>
+            <ul class="proj-list">
+              <li><b>MyOffice.</b> Migrated a nested, multi-package CodeIgniter codebase to Laravel — the Flutter app stayed as-is — carefully re-implementing logic shared across several internal projects. Delivering it converted the contract into a full-time offer.</li>
+            </ul>
           </div>
         </div>
 
@@ -443,8 +460,12 @@
           <div class="exp-when">2022 — 2024</div>
           <div class="exp-body">
             <h3><span class="lang-dot" style="background:var(--orange-fill)"></span>Web Developer <span class="exp-co">— MRN Technologies Pvt. Ltd., India</span></h3>
-            <p>Owned Clinoa, a dental EMR, end to end — designed the MySQL schema and built the REST APIs behind
-            its admin portal and Flutter app — plus Fishball ERP's sales and inventory modules.</p>
+            <p class="role-note">Two platforms architected from scratch, plus three migrations and rebuilds alongside them.</p>
+            <ul class="proj-list">
+              <li><b>Clinoa.</b> Owned the architecture and UI/UX for a dental EMR — admin site, marketing site, and the mobile APIs behind patient and doctor apps — with full role-based access across the admin panel and Flutter app. First project built in Laravel.</li>
+              <li><b>Fishball ERP.</b> Designed the initial architecture for a manufacturing ERP spanning raw materials, storage, production, packaging, and delivery, plus separate B2B and B2C apps and a driver packaging-and-tracking system.</li>
+              <li><b>TopAlliance, GroceryMart &amp; Service get4Fix.</b> Built a location-based tourist event-discovery and booking app, and migrated two Laravel 6 platforms to Laravel 8 — including get4Fix's consent-gated privacy model between customers and service agents.</li>
+            </ul>
           </div>
         </div>
 
@@ -452,8 +473,12 @@
           <div class="exp-when">2018 — 2020</div>
           <div class="exp-body">
             <h3><span class="lang-dot" style="background:var(--violet-fill)"></span>Software Engineer <span class="exp-co">— eSales Software Solutions LLP, India</span></h3>
-            <p>Delivered SchoolSoftERP's Marks Module with a mobile API and sync layer, built the SSS Balvikas
-            e-card feature, and engineered a multi-carrier shipping-rate comparison API — earned Employee of the Month.</p>
+            <p class="role-note">Two years deep in one platform's flagship module, plus two client rebuilds on the side.</p>
+            <ul class="proj-list">
+              <li><b>SchoolSoftERP — Marks Module.</b> Owned it end to end: exam and question-paper management across academic years, student marks and pivot tables, redesigned foreign keys, and fresh REST APIs — plus the mobile backend, the full admin frontend, and the platform's first Firebase push notifications. Earned Employee of the Month.</li>
+              <li><b>RatheShopper.</b> Rebuilt a local freight-rate tool into a multi-carrier global shipping-rate estimator, driving roughly a 75% lift in the client's transaction volume.</li>
+              <li><b>Sri Sathya Sai Balvikas.</b> Migrated hundreds of pages from a legacy Core PHP site to WordPress with custom templates, and shipped the SSS Balvikas e-card feature.</li>
+            </ul>
           </div>
         </div>
 
@@ -467,38 +492,24 @@
 
         <article class="project-card" style="--card-accent:var(--violet-fill)">
           <div class="card-cover"><span aria-hidden="true">{ }</span></div>
-          <div class="file-row"><span class="lang-dot" style="background:var(--violet-fill)"></span>meditation-platform/api</div>
-          <h3>Full-Stack Meditation Platform</h3>
-          <p>Designed and shipped the REST API and Express.js layers end to end, then unified web and mobile
-          sign-in with Firebase Auth — replacing fragmented flows with one reliable, token-based system.</p>
+          <div class="file-row"><span class="lang-dot" style="background:var(--violet-fill)"></span>msc-platform/backend</div>
+          <h3>Practice Self-Compassion — Meditation Platform</h3>
+          <p>Rebuilt the backend from CodeIgniter to Laravel end to end, then grew the frontend into a full
+          course-creation and course-study platform — blogs, audio practices, and teacher profiles included.</p>
           <div class="tag-row">
-            <span class="chip violet">PHP / Laravel</span>
-            <span class="chip green">Express.js</span>
-            <span class="chip orange">Firebase Auth</span>
+            <span class="chip violet">Laravel</span>
+            <span class="chip green">REST API</span>
+            <span class="chip orange">Course Platform</span>
           </div>
-          <div class="status-line"><span class="status-dot" style="background:var(--green-fill)"></span>in production</div>
+          <div class="status-line"><span class="status-dot" style="background:var(--green-fill)"></span>in active development</div>
         </article>
 
         <article class="project-card" style="--card-accent:var(--green-fill)">
-          <div class="card-cover"><span aria-hidden="true">▦</span></div>
-          <div class="file-row"><span class="lang-dot" style="background:var(--green-fill)"></span>education-platform/flutter</div>
-          <h3>Multi-Part Education Platform</h3>
-          <p>Rebuilt a legacy application from the ground up in Flutter with modern architecture, delivering the
-          CMS, portal, and scheduling modules for a multi-part education platform.</p>
-          <div class="tag-row">
-            <span class="chip green">Flutter</span>
-            <span class="chip violet">CMS</span>
-            <span class="chip orange">Scheduling</span>
-          </div>
-          <div class="status-line"><span class="status-dot" style="background:var(--green-fill)"></span>in production</div>
-        </article>
-
-        <article class="project-card" style="--card-accent:var(--orange-fill)">
           <div class="card-cover"><span aria-hidden="true">✚</span></div>
-          <div class="file-row"><span class="lang-dot" style="background:var(--orange-fill)"></span>clinoa-emr/backend</div>
-          <h3>Clinoa — Dental EMR</h3>
-          <p>Owned a dental practice EMR end to end — designed the MySQL schema and built the REST APIs powering
-          both the admin portal and the Flutter mobile app.</p>
+          <div class="file-row"><span class="lang-dot" style="background:var(--green-fill)"></span>clinoa-emr/backend</div>
+          <h3>Clinoa — Dental EMR &amp; Scheduling</h3>
+          <p>Owned the architecture and UI/UX for a dental practice's admin site, marketing site, and patient/doctor
+          mobile APIs, with full role-based access across the admin panel and Flutter app.</p>
           <div class="tag-row">
             <span class="chip orange">MySQL</span>
             <span class="chip violet">REST API</span>
@@ -507,16 +518,59 @@
           <div class="status-line"><span class="status-dot" style="background:var(--green-fill)"></span>live</div>
         </article>
 
-        <article class="project-card" style="--card-accent:var(--violet-fill)">
+        <article class="project-card" style="--card-accent:var(--orange-fill)">
           <div class="card-cover"><span aria-hidden="true">▣</span></div>
-          <div class="file-row"><span class="lang-dot" style="background:var(--violet-fill)"></span>fishball-erp/inventory</div>
-          <h3>Fishball ERP</h3>
-          <p>Built ERP modules that automated sales and inventory workflows, working from Figma designs through
-          to responsive, user-focused interfaces.</p>
+          <div class="file-row"><span class="lang-dot" style="background:var(--orange-fill)"></span>fishball-erp/inventory</div>
+          <h3>Fishball ERP — Inventory &amp; Manufacturing</h3>
+          <p>Designed the initial architecture for a manufacturing ERP spanning raw materials through delivery,
+          plus B2B/B2C apps and a driver packaging-and-tracking system.</p>
           <div class="tag-row">
             <span class="chip violet">Laravel</span>
             <span class="chip green">MySQL</span>
             <span class="chip orange">Figma</span>
+          </div>
+          <div class="status-line"><span class="status-dot" style="background:var(--slate)"></span>shipped</div>
+        </article>
+
+        <article class="project-card" style="--card-accent:var(--violet-fill)">
+          <div class="card-cover"><span aria-hidden="true">⇄</span></div>
+          <div class="file-row"><span class="lang-dot" style="background:var(--violet-fill)"></span>myoffice/migration</div>
+          <h3>MyOffice — Legacy Platform Migration</h3>
+          <p>Migrated a nested, multi-package CodeIgniter codebase to Laravel, re-implementing logic shared across
+          several internal projects — work that led to a full-time offer.</p>
+          <div class="tag-row">
+            <span class="chip violet">Laravel</span>
+            <span class="chip green">CodeIgniter → Laravel</span>
+            <span class="chip orange">Nested Architecture</span>
+          </div>
+          <div class="status-line"><span class="status-dot" style="background:var(--slate)"></span>shipped</div>
+        </article>
+
+        <article class="project-card" style="--card-accent:var(--green-fill)">
+          <div class="card-cover"><span aria-hidden="true">▤</span></div>
+          <div class="file-row"><span class="lang-dot" style="background:var(--green-fill)"></span>schoolsofterp/marks-module</div>
+          <h3>SchoolSoftERP — Marks Module</h3>
+          <p>Owned the module end to end for two years — exams, question papers, student marks and pivot tables,
+          redesigned foreign keys, fresh REST APIs, the full admin frontend, and the platform's first Firebase
+          push notifications.</p>
+          <div class="tag-row">
+            <span class="chip violet">PHP</span>
+            <span class="chip orange">Firebase</span>
+            <span class="chip green">REST API</span>
+          </div>
+          <div class="status-line"><span class="status-dot" style="background:var(--slate)"></span>shipped</div>
+        </article>
+
+        <article class="project-card" style="--card-accent:var(--orange-fill)">
+          <div class="card-cover"><span aria-hidden="true">◈</span></div>
+          <div class="file-row"><span class="lang-dot" style="background:var(--orange-fill)"></span>ratheshopper/rate-engine</div>
+          <h3>RatheShopper — Shipping Rate Estimator</h3>
+          <p>Rebuilt a local freight-rate tool into a multi-carrier global shipping-rate estimator, driving
+          roughly a 75% lift in the client's transaction volume.</p>
+          <div class="tag-row">
+            <span class="chip violet">PHP</span>
+            <span class="chip green">Rate Engine</span>
+            <span class="chip orange">Third-party APIs</span>
           </div>
           <div class="status-line"><span class="status-dot" style="background:var(--slate)"></span>shipped</div>
         </article>
@@ -571,6 +625,18 @@
           <span class="chip violet">Confluence</span>
           <span class="chip violet">Figma</span>
           <span class="chip violet">Agile / Scrum</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <span class="k">AI-assisted workflow</span>
+        <div class="skill-chips">
+          <span class="chip green">Claude</span>
+          <span class="chip green">GitHub Copilot</span>
+          <span class="chip green">Augment</span>
+          <span class="chip green">Grok</span>
+          <span class="chip green">AI image generation</span>
+          <span class="chip green">Figma-to-HTML tooling</span>
         </div>
       </div>
     </section>
