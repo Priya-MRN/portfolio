@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Priyadharshini Arumugam — résumé: summary, experience, projects, and skills.">
+<title>Priyadharshini Arumugam Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6FB;
+    --surface:#FFFFFF;
+    --ink:#15141F;
+    --ink-soft:#3A3950;
+    --slate:#6B7086;
+    --line:#DEDFEF;
+    --violet:#7C2CFF;
+    --green:#059669;
+    --orange:#8C6B12;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#131320;
+      --surface:#1B1B2E;
+      --ink:#F1F1F8;
+      --ink-soft:#C7C7DA;
+      --slate:#8B90A8;
+      --line:#2C2C42;
+      --violet:#9C7BFF;
+      --green:#3FD69A;
+      --orange:#D9A94E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131320;
+    --surface:#1B1B2E;
+    --ink:#F1F1F8;
+    --ink-soft:#C7C7DA;
+    --slate:#8B90A8;
+    --line:#2C2C42;
+    --violet:#9C7BFF;
+    --green:#3FD69A;
+    --orange:#FF9152;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Newsreader", Georgia, "Times New Roman", serif;
+    font-optical-sizing:auto; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background:var(--violet); color:#fff; }
+  a{ color:inherit; }
+  a:focus-visible{ outline:2px solid var(--violet); outline-offset:2px; }
+  .mono{ font-family:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  .page{ max-width:740px; margin:0 auto; padding:clamp(28px,7vw,64px) clamp(20px,5vw,28px) 56px; }
+
+  /* header */
+  .doc-eyebrow{
+    font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--violet);
+    margin:0 0 18px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  }
+  .doc-eyebrow .path::before{ content:"~/resume $ cat "; color:var(--slate); }
+  .doc-eyebrow a{ text-decoration:none; color:var(--slate); border-bottom:1px dotted var(--slate); }
+  .doc-eyebrow a:hover{ color:var(--violet); border-color:var(--violet); }
+
+  header.id{ border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:28px; }
+  h1{
+    font-family:"Bricolage Grotesque", sans-serif; font-weight:800; font-size:clamp(1.9rem, 5vw, 2.5rem);
+    margin:0 0 6px; letter-spacing:-0.01em; text-wrap:balance;
+  }
+  .role{ font-family:"JetBrains Mono", monospace; font-size:0.92rem; color:var(--violet); margin:0 0 14px; }
+  .contact-row{
+    font-family:"JetBrains Mono", monospace; font-size:0.8rem; color:var(--ink-soft);
+    display:flex; flex-wrap:wrap; gap:5px 10px; align-items:center;
+  }
+  .contact-row a{ text-decoration:none; color:var(--ink-soft); border-bottom:1px solid transparent; }
+  .contact-row a:hover{ color:var(--violet); border-color:var(--violet); }
+  .contact-row .sep{ color:var(--line); }
+
+  section{ margin-bottom:34px; }
+  section:last-child{ margin-bottom:0; }
+  h2{
+    font-family:"JetBrains Mono", monospace; font-size:0.76rem; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.1em; color:var(--slate);
+    margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+  }
+  h2 span{ color:var(--violet); }
+  p{ margin:0 0 10px; color:var(--ink-soft); }
+  .lede{ font-size:1.08rem; max-width:64ch; }
+
+  .strengths{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .strengths .item b{
+    display:block; font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:0.98rem;
+    color:var(--ink); margin-bottom:5px;
+  }
+  .strengths .item p{ font-size:0.9rem; margin:0; }
+
+  .exp-item{ padding:0 0 20px; border-bottom:1px solid var(--line); margin-bottom:20px; }
+  .exp-item:last-child{ border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  .exp-head{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; margin-bottom:5px; flex-wrap:wrap; }
+  .exp-title{ font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:1.08rem; color:var(--ink); }
+  .exp-co{ font-style:italic; color:var(--slate); font-weight:400; font-size:0.92em; }
+  .exp-when{ font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--slate); white-space:nowrap; }
+  .exp-item p{ margin:0; font-size:0.98rem; max-width:66ch; }
+
+  .proj-item{ padding:0 0 18px; }
+  .proj-item:last-child{ padding-bottom:0; }
+  .proj-head{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:3px; }
+  .proj-title{ font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:1.02rem; color:var(--ink); }
+  .proj-status{ font-family:"JetBrains Mono", monospace; font-size:0.72rem; color:var(--green); }
+  .proj-item p{ margin:0 0 5px; font-size:0.95rem; max-width:66ch; }
+  .stack{ font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--slate); }
+  .stack b{ color:var(--ink-soft); font-weight:500; }
+
+  .skills-grid{ display:grid; grid-template-columns:140px 1fr; gap:11px 18px; }
+  .skills-grid .k{
+    font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--slate);
+    text-transform:uppercase; letter-spacing:0.04em; padding-top:2px;
+  }
+  .skills-grid .v{ font-size:0.98rem; color:var(--ink-soft); }
+
+  footer{
+    margin-top:40px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:"JetBrains Mono", monospace; font-size:0.76rem; color:var(--slate);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  @media (max-width: 620px){
+    .strengths{ grid-template-columns:1fr; gap:16px; }
+    .skills-grid{ grid-template-columns:1fr; gap:3px 0; }
+    .skills-grid .k{ margin-top:8px; }
+    .exp-when{ order:-1; flex-basis:100%; }
+  }
+
+  @media print{
+    body{ background:#fff; }
+    .doc-eyebrow a{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <p class="doc-eyebrow">
+    <span class="path">priyadharshini.yml</span>
+    <a href="index.html">full portfolio site ↗</a>
+  </p>
+
+  <header class="id">
+    <h1>Priyadharshini Arumugam</h1>
+    <p class="role">Software Engineer II — Backend &amp; Full-Stack</p>
+    <div class="contact-row">
+      <a href="mailto:priyadharshiniarumugam52@gmail.com">priyadharshiniarumugam52@gmail.com</a>
+      <span class="sep">/</span>
+      <a href="https://www.linkedin.com/in/priyadharshini-arumugam-a43973229" target="_blank" rel="noopener">linkedin.com/in/priyadharshini-arumugam-a43973229</a>
+      <span class="sep">/</span>
+      <a href="https://www.hackerrank.com/profile/priyadharshin782" target="_blank" rel="noopener">hackerrank.com/profile/priyadharshin782</a>
+      <span class="sep">/</span>
+      <span>Puducherry, India — open to remote</span>
+    </div>
+  </header>
+
+  <section>
+    <h2><span>//</span> summary</h2>
+    <p class="lede">Backend-leaning full-stack engineer with 6+ years shipping REST APIs and services that stay
+    up — across healthcare, education, ERP, and consumer platforms. Comfortable owning a feature end to end:
+    schema design, the API on top of it, and the interface that calls it. Formally trained in biomedical
+    engineering, then moved into software in 2018.</p>
+  </section>
+
+  <section>
+    <h2><span>//</span> strengths</h2>
+    <div class="strengths">
+      <div class="item">
+        <b>End-to-end ownership</b>
+        <p>Schema design, the API on top of it, and the interface that calls it — scoping through production support.</p>
+      </div>
+      <div class="item">
+        <b>Reliability instincts</b>
+        <p>Usually the one who notices when a subscription or billing flow quietly breaks — before it reaches a user.</p>
+      </div>
+      <div class="item">
+        <b>Cross-platform delivery</b>
+        <p>Laravel/Node APIs on the backend, Flutter apps and responsive UI on the front.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">PHP / Full Stack Developer <span class="exp-co">— Interconnected Pty Ltd, Remote (Australia)</span></span>
+        <span class="exp-when">2025 — Present</span>
+      </div>
+      <p>Built the REST API and Express.js layers for a full-stack meditation platform, unified web and mobile
+      auth with Firebase, and rebuilt a legacy education platform from the ground up in Flutter with CMS,
+      portal, and scheduling modules.</p>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">PHP Developer <span class="exp-co">— Crontus Pty Ltd, Remote (Australia)</span></span>
+        <span class="exp-when">2024 — 2025</span>
+      </div>
+      <p>Worked across multiple interwoven Laravel projects in a shared system, contributing to REST API
+      design and third-party integrations while keeping changes safe across dependent services.</p>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">Web Developer <span class="exp-co">— MRN Technologies Pvt. Ltd., India</span></span>
+        <span class="exp-when">2022 — 2024</span>
+      </div>
+      <p>Owned Clinoa, a dental EMR, end to end — designed the MySQL schema and built the REST APIs behind
+      its admin portal and Flutter app — plus Fishball ERP's sales and inventory modules.</p>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">Software Engineer <span class="exp-co">— eSales Software Solutions LLP, India</span></span>
+        <span class="exp-when">2018 — 2020</span>
+      </div>
+      <p>Delivered SchoolSoftERP's Marks Module with a mobile API and sync layer, built the SSS Balvikas
+      e-card feature, and engineered a multi-carrier shipping-rate comparison API — earned Employee of the Month.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> selected projects</h2>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <span class="proj-title">Full-Stack Meditation Platform</span>
+        <span class="proj-status">in production</span>
+      </div>
+      <p>Designed and shipped the REST API and Express.js layers end to end, then unified web and mobile
+      sign-in with Firebase Auth — replacing fragmented flows with one reliable, token-based system.</p>
+      <div class="stack"><b>Stack</b> — PHP / Laravel · Express.js · Firebase Auth</div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <span class="proj-title">Multi-Part Education Platform</span>
+        <span class="proj-status">in production</span>
+      </div>
+      <p>Rebuilt a legacy application from the ground up in Flutter with modern architecture, delivering
+      the CMS, portal, and scheduling modules.</p>
+      <div class="stack"><b>Stack</b> — Flutter · CMS · Scheduling</div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <span class="proj-title">Clinoa — Dental EMR</span>
+        <span class="proj-status">live</span>
+      </div>
+      <p>Owned a dental practice EMR end to end — designed the MySQL schema and built the REST APIs
+      powering both the admin portal and the Flutter mobile app.</p>
+      <div class="stack"><b>Stack</b> — MySQL · REST API · Flutter</div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
+        <span class="proj-title">Fishball ERP</span>
+        <span class="proj-status" style="color:var(--slate)">shipped</span>
+      </div>
+      <p>Built ERP modules that automated sales and inventory workflows, working from Figma designs
+      through to responsive, user-focused interfaces.</p>
+      <div class="stack"><b>Stack</b> — Laravel · MySQL · Figma</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> skills</h2>
+    <div class="skills-grid">
+      <div class="k">Languages</div><div class="v">JavaScript (ES6+), Python, PHP</div>
+      <div class="k">Backend &amp; APIs</div><div class="v">Node.js, Express.js, Laravel, REST API design, Token-based auth, MySQL</div>
+      <div class="k">Frontend</div><div class="v">HTML5, CSS3, Bootstrap, jQuery, Flutter, React (learning)</div>
+      <div class="k">Tools &amp; Practices</div><div class="v">Git, GitHub, Linux, Jira, Confluence, Figma, Agile / Scrum</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Puducherry, India · open to remote — India, Nagpur, Dubai</span>
+    <span>updated 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
