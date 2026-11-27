@@ -102,7 +102,7 @@ backend, the full admin frontend, and the platform's first Firebase push notific
 
 ---
 
-### RatheShopper — Shipping Rate Estimator — *shipped*
+### Rate Shopper — Shipping Rate Estimator — *shipped*
 `PHP · Rate engine · Third-party carrier APIs`
 
 Rebuilt a local freight-rate tool into a multi-carrier global shipping-rate estimator — roughly a **75% lift**
@@ -140,6 +140,7 @@ prompt-only behaviour.
 | PHP / Full Stack Developer | Interconnected Pty Ltd — Remote (Australia) | 05/2025 – Present |
 | PHP Developer | Crontus Pty Ltd — Remote (Australia) | 04/2024 – 04/2025 |
 | Web Developer | MRN Technologies Pvt. Ltd. — India | 06/2022 – 04/2024 |
+| Career break & other roles | Maternity break · Freelance tutor · Airmath (AIRM) mobile app · Process Executive, Arxt Labs Pvt. Ltd., Bangalore | 10/2020 – 06/2022 |
 | Software Engineer | eSales Software Solutions LLP — India | 06/2018 – 10/2020 |
 
 **Education** — B.Tech, Biomedical Engineering, Rajiv Gandhi College of Engineering & Technology, Puducherry (2014 – 2018)
