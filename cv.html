@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Priyadharshini Arumugam — detailed CV: full experience, project deep-dives, skills, and education.">
+<title>Priyadharshini Arumugam — Curriculum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F6FB;
+    --surface:#FFFFFF;
+    --ink:#15141F;
+    --ink-soft:#3A3950;
+    --slate:#6B7086;
+    --line:#DEDFEF;
+    --violet:#7C2CFF;
+    --green:#059669;
+    --orange:#8C6B12;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#131320;
+      --surface:#1B1B2E;
+      --ink:#F1F1F8;
+      --ink-soft:#C7C7DA;
+      --slate:#8B90A8;
+      --line:#2C2C42;
+      --violet:#9C7BFF;
+      --green:#3FD69A;
+      --orange:#D9A94E;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131320;
+    --surface:#1B1B2E;
+    --ink:#F1F1F8;
+    --ink-soft:#C7C7DA;
+    --slate:#8B90A8;
+    --line:#2C2C42;
+    --violet:#9C7BFF;
+    --green:#3FD69A;
+    --orange:#FF9152;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Newsreader", Georgia, "Times New Roman", serif;
+    font-optical-sizing:auto; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background:var(--violet); color:#fff; }
+  a{ color:inherit; }
+  a:focus-visible{ outline:2px solid var(--violet); outline-offset:2px; }
+  .mono{ font-family:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  .page{ max-width:740px; margin:0 auto; padding:clamp(28px,7vw,64px) clamp(20px,5vw,28px) 56px; }
+
+  /* header */
+  .doc-eyebrow{
+    font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--violet);
+    margin:0 0 18px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  }
+  .doc-eyebrow .path::before{ content:"~/resume $ cat "; color:var(--slate); }
+  .doc-eyebrow a{ text-decoration:none; color:var(--slate); border-bottom:1px dotted var(--slate); }
+  .doc-eyebrow a:hover{ color:var(--violet); border-color:var(--violet); }
+
+  header.id{ border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:28px; }
+  h1{
+    font-family:"Bricolage Grotesque", sans-serif; font-weight:800; font-size:clamp(1.9rem, 5vw, 2.5rem);
+    margin:0 0 6px; letter-spacing:-0.01em; text-wrap:balance;
+  }
+  .role{ font-family:"JetBrains Mono", monospace; font-size:0.92rem; color:var(--violet); margin:0 0 14px; }
+  .contact-row{
+    font-family:"JetBrains Mono", monospace; font-size:0.8rem; color:var(--ink-soft);
+    display:flex; flex-wrap:wrap; gap:5px 10px; align-items:center;
+  }
+  .contact-row a{ text-decoration:none; color:var(--ink-soft); border-bottom:1px solid transparent; }
+  .contact-row a:hover{ color:var(--violet); border-color:var(--violet); }
+  .contact-row .sep{ color:var(--line); }
+
+  section{ margin-bottom:34px; }
+  section:last-child{ margin-bottom:0; }
+  h2{
+    font-family:"JetBrains Mono", monospace; font-size:0.76rem; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.1em; color:var(--slate);
+    margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
+  }
+  h2 span{ color:var(--violet); }
+  p{ margin:0 0 10px; color:var(--ink-soft); }
+  .lede{ font-size:1.08rem; max-width:64ch; }
+
+  .strengths{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px 24px; }
+  .strengths .item b{
+    display:block; font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:0.98rem;
+    color:var(--ink); margin-bottom:5px;
+  }
+  .strengths .item p{ font-size:0.9rem; margin:0; }
+
+  .exp-item{ padding:0 0 20px; border-bottom:1px solid var(--line); margin-bottom:20px; }
+  .exp-item:last-child{ border-bottom:none; margin-bottom:0; padding-bottom:0; }
+  .exp-head{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; margin-bottom:5px; flex-wrap:wrap; }
+  .exp-title{ font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:1.08rem; color:var(--ink); }
+  .exp-co{ font-style:italic; color:var(--slate); font-weight:400; font-size:0.92em; }
+  .exp-when{ font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--slate); white-space:nowrap; }
+  .exp-item p{ margin:0; font-size:0.98rem; max-width:66ch; }
+
+  .proj-item{ padding:0 0 18px; }
+  .proj-item:last-child{ padding-bottom:0; }
+  .proj-head{ display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:3px; }
+  .proj-title{ font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:1.02rem; color:var(--ink); }
+  .proj-status{ font-family:"JetBrains Mono", monospace; font-size:0.72rem; color:var(--green); }
+  .proj-item p{ margin:0 0 5px; font-size:0.95rem; max-width:66ch; }
+  .stack{ font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--slate); }
+  .stack b{ color:var(--ink-soft); font-weight:500; }
+
+  .skills-grid{ display:grid; grid-template-columns:140px 1fr; gap:11px 18px; }
+  .skills-grid .k{
+    font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--slate);
+    text-transform:uppercase; letter-spacing:0.04em; padding-top:2px;
+  }
+  .skills-grid .v{ font-size:0.98rem; color:var(--ink-soft); }
+
+  footer{
+    margin-top:40px; padding-top:16px; border-top:1px solid var(--line);
+    font-family:"JetBrains Mono", monospace; font-size:0.76rem; color:var(--slate);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+
+  @media (max-width: 620px){
+    .strengths{ grid-template-columns:1fr; gap:16px; }
+    .skills-grid{ grid-template-columns:1fr; gap:3px 0; }
+    .skills-grid .k{ margin-top:8px; }
+    .exp-when{ order:-1; flex-basis:100%; }
+  }
+
+  @media print{
+    body{ background:#fff; }
+    .doc-eyebrow a{ display:none; }
+  }
+</style>
+<style>
+  .page{ max-width:820px; }
+  .doc-eyebrow .path::before{ content:"~/cv $ cat "; }
+  .cv-sub{ font-size:0.95rem; color:var(--slate); margin:0 0 14px; font-style:italic; }
+  .exp-item .exp-sub{ font-family:"JetBrains Mono", monospace; font-size:0.76rem; color:var(--slate); margin:0 0 10px; }
+  ul.bullets{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:9px; }
+  ul.bullets li{ position:relative; padding-left:17px; font-size:0.97rem; color:var(--ink-soft); max-width:72ch; }
+  ul.bullets li::before{
+    content:"›"; position:absolute; left:0; top:0; color:var(--violet);
+    font-family:"JetBrains Mono", monospace; font-weight:700;
+  }
+  ul.bullets b{ color:var(--ink); }
+  .deep{
+    background:var(--surface); border:1px solid var(--line);
+    border-left:3px solid var(--violet); border-radius:4px;
+    padding:20px 22px; margin-bottom:22px;
+  }
+  .deep:last-child{ margin-bottom:0; }
+  .deep h3{
+    font-family:"Bricolage Grotesque", sans-serif; font-weight:700; font-size:1.1rem;
+    margin:0 0 4px; color:var(--ink);
+  }
+  .deep .meta{ font-family:"JetBrains Mono", monospace; font-size:0.74rem; color:var(--slate); margin:0 0 14px; }
+  .deep h4{
+    font-family:"JetBrains Mono", monospace; font-size:0.72rem; font-weight:700;
+    text-transform:uppercase; letter-spacing:0.08em; color:var(--violet);
+    margin:16px 0 7px;
+  }
+  .deep h4:first-of-type{ margin-top:0; }
+  .deep p{ font-size:0.95rem; margin:0 0 8px; max-width:72ch; }
+  .flow{
+    font-family:"JetBrains Mono", monospace; font-size:0.78rem; color:var(--ink-soft);
+    background:var(--paper); border:1px solid var(--line); border-radius:3px;
+    padding:12px 14px; margin:0 0 10px; line-height:1.9; word-break:break-word;
+  }
+  .flow b{ color:var(--violet); font-weight:500; }
+  ol.steps{ margin:0 0 8px; padding-left:20px; }
+  ol.steps li{ font-size:0.94rem; color:var(--ink-soft); margin-bottom:5px; max-width:72ch; }
+  .outcome{
+    border-top:1px dashed var(--line); margin-top:14px; padding-top:12px;
+    font-size:0.95rem; color:var(--ink-soft);
+  }
+  .outcome b{ color:var(--green); }
+  @media print{
+    .deep{ break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <p class="doc-eyebrow">
+    <span class="path">priyadharshini.cv</span>
+    <span><a href="resume.html">1-page résumé ↗</a> &nbsp; <a href="index.html">full portfolio ↗</a></span>
+  </p>
+
+  <header class="id">
+    <h1>Priyadharshini Arumugam</h1>
+    <p class="role">Full-Stack Software Engineer · Backend-leaning · 6+ years production ownership</p>
+    <div class="contact-row">
+      <a href="mailto:priyadharshiniarumugam52@gmail.com">priyadharshiniarumugam52@gmail.com</a>
+      <span class="sep">/</span>
+      <a href="tel:+919597186254">+91 95971 86254</a>
+      <span class="sep">/</span>
+      <a href="https://www.linkedin.com/in/priyadharshini-arumugam-a43973229" target="_blank" rel="noopener">linkedin.com/in/priyadharshini-arumugam-a43973229</a>
+      <span class="sep">/</span>
+      <a href="https://github.com/Priya-MRN" target="_blank" rel="noopener">github.com/Priya-MRN</a>
+      <span class="sep">/</span>
+      <span>Puducherry, India — open to remote</span>
+    </div>
+  </header>
+
+  <section>
+    <h2><span>//</span> professional summary</h2>
+    <p class="lede">Full-stack engineer with 6+ years of end-to-end ownership of production web and SaaS applications.
+    Strong backend foundation in PHP/Laravel and Node.js, deep MySQL and schema-design experience, and a proven
+    record of modernising legacy systems — three CodeIgniter and Laravel 6 → 8 migrations delivered into production
+    without losing logic shared across packages. Recently added automated deployment tooling (GitHub Actions,
+    Railway, Confluence, Cloudflare Workers) and AI-assisted development workflows. Comfortable taking ambiguous
+    requirements from design through production support in distributed remote teams. Actively expanding into
+    TypeScript, React/Next.js, and AI product engineering.</p>
+  </section>
+
+  <section>
+    <h2><span>//</span> core skills</h2>
+    <div class="skills-grid">
+      <div class="k">Languages</div><div class="v">PHP, JavaScript (ES6+), Python, TypeScript (learning)</div>
+      <div class="k">Frameworks</div><div class="v">Laravel, CodeIgniter, Symfony, Node.js, Express.js, Flutter, React / Next.js (learning), FastAPI (in progress)</div>
+      <div class="k">Databases &amp; Data</div><div class="v">MySQL, Laravel Eloquent ORM, schema design, query optimisation, indexing, migrations, data integrity</div>
+      <div class="k">APIs &amp; Security</div><div class="v">REST API design, RBAC, authentication &amp; authorisation, token-based auth, webhooks, Firebase, third-party integrations</div>
+      <div class="k">Delivery &amp; Ops</div><div class="v">Git, GitHub Actions, CI/CD, Railway (PaaS), Cloudflare Workers, Confluence REST API, automated changelogs, Linux, Jira, Agile / Scrum</div>
+      <div class="k">AI &amp; Automation</div><div class="v">AI-assisted development (Claude, GitHub Copilot, Augment, Grok), AI agent workflows, Jira automation agent, support-agent prototypes, Figma-to-HTML tooling</div>
+      <div class="k">Frontend</div><div class="v">HTML5, CSS3, Bootstrap, jQuery, responsive UI, Figma</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> professional experience</h2>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">PHP / Full Stack Developer <span class="exp-co">— Interconnected Pty Ltd, Remote (Australia)</span></span>
+        <span class="exp-when">05/2025 — Present</span>
+      </div>
+      <p class="exp-sub">Full-stack delivery across three products for a meditation and mindfulness company.</p>
+      <ul class="bullets">
+        <li><b>Practice Self-Compassion (MSC)</b> — own end-to-end delivery: Laravel REST APIs built from scratch,
+        CodeIgniter → Laravel migration, schema design, course/content/trainer features, testing, and Railway
+        deployment. Grew the frontend from a minimal shell into a complete course-creation and course-study platform
+        with blogs, audio practices, and teacher profiles.</li>
+        <li><b>Automated changelog system</b> — designed and built the release-notes automation that runs on every
+        production deployment: GitHub Actions parses commits and PR titles, writes the formatted changelog to
+        Confluence via REST API, and fires a Cloudflare Workers notification before the Railway deploy proceeds.
+        Non-blocking by design, with retries and alerting. (Full write-up below.)</li>
+        <li><b>Jon Kabat-Zinn Meditations (JKZ)</b> — maintain and enhance the B2B Teams subscription portal and the
+        marketing site: feature delivery, stability, and reliability work.</li>
+        <li><b>Hjärnfokus</b> — modernised the Flutter app's backend integrations: dependency upgrades across major
+        version boundaries, package replacement, and architecture updates.</li>
+        <li>Collaborate with remote stakeholders using Agile practices and AI-assisted development workflows.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">PHP Developer <span class="exp-co">— Crontus Pty Ltd, Remote (Australia)</span></span>
+        <span class="exp-when">04/2024 — 04/2025</span>
+      </div>
+      <ul class="bullets">
+        <li><b>MyOffice platform modernisation</b> — migrated a complex, nested multi-package CodeIgniter codebase to
+        Laravel, improving structure, testing readiness, and maintainability while preserving logic shared across
+        several internal projects.</li>
+        <li>Built and supported scalable Laravel backends, REST APIs, and third-party integrations; balanced planned
+        development against production support within Agile sprints.</li>
+        <li>Completing the migration converted a contract engagement into a full-time offer.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">Web Developer <span class="exp-co">— MRN Technologies Pvt. Ltd., India</span></span>
+        <span class="exp-when">06/2022 — 04/2024</span>
+      </div>
+      <p class="exp-sub">Two platforms architected from scratch, plus three migrations and rebuilds alongside them.</p>
+      <ul class="bullets">
+        <li><b>Clinoa (dental EMR)</b> — owned end to end: MySQL schema design, RBAC, admin and marketing UIs, REST
+        APIs for the Flutter patient and doctor apps, testing, and production support.</li>
+        <li><b>Fishball ERP</b> — architected an inventory and manufacturing system covering raw materials, storage,
+        production, packaging, and delivery: data models, supply-chain workflows, separate B2B and B2C apps, and a
+        driver packaging-and-tracking system. Launched the website during tenure.</li>
+        <li><b>GroceryMart</b> and <b>Service get4Fix</b> — modernised both from Laravel 6 to Laravel 8, improving
+        legacy code, access control, and maintainability — including get4Fix's consent-gated privacy model between
+        customers and service agents.</li>
+        <li><b>TopAlliance</b> — built location-based appointment and event-discovery APIs; troubleshooting and
+        feature delivery across multiple enterprise apps.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-head">
+        <span class="exp-title">Software Engineer <span class="exp-co">— eSales Software Solutions LLP, India</span></span>
+        <span class="exp-when">06/2018 — 10/2020</span>
+      </div>
+      <p class="exp-sub">Two years deep in one platform's flagship module, plus two client rebuilds alongside it.</p>
+      <ul class="bullets">
+        <li><b>SchoolSoftERP — Marks Module</b> — owned it end to end for two years: exam and question-paper management
+        across academic years, student marks and pivot tables, schema and foreign-key redesign, fresh REST APIs, the
+        mobile backend, the full admin frontend, and the platform's first Firebase push notifications.
+        <b>Employee of the Month.</b></li>
+        <li><b>Events Management System</b> and <b>RatheShopper</b> — built a multi-carrier shipping-rate platform from
+        a local freight-rate tool, delivering roughly a 75% improvement in the client's transaction throughput.</li>
+        <li><b>Sri Sathya Sai Balvikas</b> — migrated hundreds of pages from Core PHP to WordPress with custom themes
+        and third-party APIs, shipped the e-card feature, and handled the live launch.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> project deep-dives</h2>
+
+    <div class="deep">
+      <h3>Automated Changelog Pipeline</h3>
+      <p class="meta">GitHub Actions · Confluence REST API · Cloudflare Workers · Railway — in production</p>
+
+      <h4>Problem</h4>
+      <p>Release notes were being written manually, or skipped entirely. Non-technical stakeholders and support had no
+      reliable source of truth for what changed in each release, and engineering fielded the questions.</p>
+
+      <h4>Component boundaries &amp; data sources</h4>
+      <p class="flow">
+        <b>source of truth</b> — GitHub commits + PR titles on main<br>
+        <b>orchestration</b> — GitHub Actions, triggered on merge to main<br>
+        <b>processing</b> — scripts parsing conventional commits / PR metadata<br>
+        <b>destinations</b> — Confluence (living release page) + Cloudflare Workers (notifications)<br>
+        <b>deploy target</b> — Railway
+      </p>
+
+      <h4>Event flow</h4>
+      <ol class="steps">
+        <li>Merge to main triggers the GitHub Action.</li>
+        <li>The action checks out the repo and extracts commits since the previous successful production release tag.</li>
+        <li>Commits are filtered and formatted into a readable changelog, grouped by type where conventional commits
+        are used.</li>
+        <li>The formatted content is sent to Confluence via REST API — creating a new page or appending to the existing
+        "Releases" page.</li>
+        <li>A notification fires through a Cloudflare Worker to the team's chosen channel.</li>
+        <li>The Railway deployment job proceeds. A changelog failure never blocks it.</li>
+      </ol>
+
+      <h4>Reliability choices</h4>
+      <ul class="bullets">
+        <li><b>Environment-aware</b> — runs only in production context.</li>
+        <li><b>Non-blocking</b> — the changelog is best-effort; the deploy is the critical path.</li>
+        <li><b>Retry and alert</b> — external API calls (Confluence, Cloudflare) retry on failure, and the action is
+        marked failed so the break surfaces immediately instead of silently.</li>
+        <li><b>Separation of concerns</b> — the action is reusable and extensible for other internal automation.</li>
+      </ul>
+
+      <p class="outcome"><b>Outcome</b> — manual release-note writing disappeared, the team gained a searchable history
+      in Confluence, and stakeholders could see what went live without asking engineering. It became a reusable pattern
+      for other internal automation.</p>
+    </div>
+
+    <div class="deep">
+      <h3>Clinoa — Dental EMR &amp; Scheduling</h3>
+      <p class="meta">Laravel · MySQL · RBAC · REST API · Flutter — live</p>
+
+      <h4>Scope</h4>
+      <p>A dental practice's full system, owned end to end: the admin site clinicians work in, the public marketing
+      site, and the REST APIs behind separate patient and doctor mobile apps. First project I architected in Laravel.</p>
+
+      <h4>What I owned</h4>
+      <ul class="bullets">
+        <li><b>Schema design</b> — the clinical data model: patients, appointments, treatment records, and the
+        relationships that keep a medical record coherent over time.</li>
+        <li><b>Role-based access control</b> — a single permission model enforced consistently across the admin panel
+        and both mobile apps, so a doctor, a patient, and an administrator each see only their own surface of the data.</li>
+        <li><b>API layer</b> — the REST endpoints the Flutter apps consume, designed alongside the mobile work rather
+        than handed over after the fact.</li>
+        <li><b>UI/UX</b> — the admin interface and the marketing site, through to production support after launch.</li>
+      </ul>
+
+      <p class="outcome"><b>Outcome</b> — a live EMR running a practice's day-to-day scheduling and records, with one
+      access model holding across three clients.</p>
+    </div>
+
+    <div class="deep">
+      <h3>MyOffice — CodeIgniter → Laravel Migration</h3>
+      <p class="meta">Laravel · CodeIgniter · Eloquent · multi-package architecture — shipped</p>
+
+      <h4>Problem</h4>
+      <p>A nested, multi-package CodeIgniter codebase where business logic was shared across several internal projects.
+      A naive port would have silently broken the dependent projects.</p>
+
+      <h4>Approach</h4>
+      <ul class="bullets">
+        <li>Mapped the package boundaries first to find what was genuinely shared versus what had been copied.</li>
+        <li>Re-implemented shared logic in Laravel, preserving behaviour for every dependent project.</li>
+        <li>Left the Flutter client untouched — the API contract held, so mobile needed no release.</li>
+        <li>Improved structure and testing readiness as part of the move rather than as a follow-up.</li>
+      </ul>
+
+      <p class="outcome"><b>Outcome</b> — delivered into production; the engagement converted from contract to a
+      full-time offer.</p>
+    </div>
+
+    <div class="deep">
+      <h3>AI Agent + Jira Integration &amp; Support Agent AI</h3>
+      <p class="meta">Python · AI agent patterns · Jira API — prototypes</p>
+      <h4>What it does</h4>
+      <p>Automated issue workflows using AI agent patterns — classification, tool-calling, and structured output — to
+      reduce manual triage on incoming tickets. Alongside it, a customer-support automation prototype in Python built
+      around clean OOP design and explicit core logic rather than prompt-only behaviour.</p>
+      <p class="outcome"><b>Direction</b> — building reliable automation around AI, not just using AI coding tools.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> additional projects</h2>
+    <ul class="bullets">
+      <li><b>Practice Self-Compassion (MSC)</b> — Laravel course platform with blogs, audio practices, and teacher
+      profiles, rebuilt from a legacy CodeIgniter API. In active development.</li>
+      <li><b>Fishball ERP</b> — manufacturing and inventory ERP spanning raw materials through delivery, with B2B/B2C
+      apps and driver tracking.</li>
+      <li><b>SchoolSoftERP Marks Module</b> — exams, question papers, marks and pivot tables, foreign-key redesign,
+      REST APIs, and the platform's first Firebase push notifications.</li>
+      <li><b>RatheShopper</b> — multi-carrier global shipping-rate estimator; ~75% lift in client transaction volume.</li>
+      <li><b>TopAlliance</b> — location-based tourist event-discovery and booking APIs.</li>
+      <li><b>GroceryMart · Service get4Fix</b> — Laravel 6 → 8 modernisations with improved access control.</li>
+      <li><b>Sri Sathya Sai Balvikas</b> — Core PHP → WordPress migration of hundreds of pages, plus the e-card feature.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span>//</span> education</h2>
+    <p><b>B.Tech, Biomedical Engineering</b> — Rajiv Gandhi College of Engineering &amp; Technology, Puducherry
+    (2014 – 2018)</p>
+  </section>
+
+  <section>
+    <h2><span>//</span> languages</h2>
+    <p>English (professional) · Tamil (native)</p>
+  </section>
+
+  <footer>
+    <span>References available on request · Puducherry, India · open to remote</span>
+    <span>updated 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>

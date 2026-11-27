@@ -150,7 +150,7 @@
 
   <p class="doc-eyebrow">
     <span class="path">priyadharshini.yml</span>
-    <a href="index.html">full portfolio site ↗</a>
+    <span><a href="cv.html">detailed CV ↗</a> &nbsp; <a href="index.html">full portfolio ↗</a></span>
   </p>
 
   <header class="id">
@@ -159,9 +159,11 @@
     <div class="contact-row">
       <a href="mailto:priyadharshiniarumugam52@gmail.com">priyadharshiniarumugam52@gmail.com</a>
       <span class="sep">/</span>
+      <a href="tel:+919597186254">+91 95971 86254</a>
+      <span class="sep">/</span>
       <a href="https://www.linkedin.com/in/priyadharshini-arumugam-a43973229" target="_blank" rel="noopener">linkedin.com/in/priyadharshini-arumugam-a43973229</a>
       <span class="sep">/</span>
-      <a href="https://www.hackerrank.com/profile/priyadharshin782" target="_blank" rel="noopener">hackerrank.com/profile/priyadharshin782</a>
+      <a href="https://github.com/Priya-MRN" target="_blank" rel="noopener">github.com/Priya-MRN</a>
       <span class="sep">/</span>
       <span>Puducherry, India — open to remote</span>
     </div>
@@ -169,12 +171,13 @@
 
   <section>
     <h2><span>//</span> summary</h2>
-    <p class="lede">Backend-leaning full-stack engineer with 6+ years turning ambiguous requirements into systems
-    that hold up in production — designing the schema, building the API on top of it, and shipping the interface
-    that calls it. Architected a dental EMR and a manufacturing ERP from scratch, rebuilt a meditation platform's
-    backend off a legacy CodeIgniter API, and spent two years owning a school ERP's marks and events systems.
-    Picks up new stacks fast, and works just as well solo as embedded in a team. Formally trained in biomedical
-    engineering, then moved into software in 2018.</p>
+    <p class="lede">Backend-leaning full-stack engineer with 6+ years of end-to-end ownership of production web and
+    SaaS applications — designing the schema, building the API on top of it, and shipping the interface that calls it.
+    Deep in PHP/Laravel and Node.js with strong MySQL schema design, and a track record of modernising legacy systems
+    (CodeIgniter → Laravel, Laravel 6 → 8). Architected a dental EMR and a manufacturing ERP from scratch, and built
+    the deployment automation — GitHub Actions → Confluence → Cloudflare Workers → Railway — that gave a distributed
+    team a reliable release history. Comfortable taking ambiguous requirements through to production support in remote
+    teams. Currently expanding into TypeScript, React/Next.js, and AI product engineering.</p>
   </section>
 
   <section>
@@ -185,16 +188,16 @@
         <p>From schema to shipped UI — features taken from a blank ticket through production support.</p>
       </div>
       <div class="item">
+        <b>Legacy modernisation</b>
+        <p>Three production migrations delivered — nested CodeIgniter monoliths to Laravel without losing shared logic.</p>
+      </div>
+      <div class="item">
+        <b>Automation &amp; delivery tooling</b>
+        <p>CI/CD designed for failure: non-blocking side-effects, retries, and alerting off the critical path.</p>
+      </div>
+      <div class="item">
         <b>Reliability instincts</b>
         <p>Usually the one who notices when a subscription or billing flow quietly breaks — before it reaches a user.</p>
-      </div>
-      <div class="item">
-        <b>Cross-platform delivery</b>
-        <p>Laravel/Node APIs on the backend, Flutter apps and responsive UI on the front.</p>
-      </div>
-      <div class="item">
-        <b>Learns fast, works either way</b>
-        <p>New language, new framework, new legacy codebase — productive quickly, solo or embedded in a team.</p>
       </div>
     </div>
   </section>
@@ -205,47 +208,50 @@
     <div class="exp-item">
       <div class="exp-head">
         <span class="exp-title">PHP / Full Stack Developer <span class="exp-co">— Interconnected Pty Ltd, Remote (Australia)</span></span>
-        <span class="exp-when">2025 — Present</span>
+        <span class="exp-when">05/2025 — Present</span>
       </div>
-      <p><b>Practice Self-Compassion (MSC)</b> — rebuilt the backend from CodeIgniter to Laravel end to end (full API
-      and schema migration), then grew the frontend into a complete course-creation and course-study platform with
-      blogs, audio practices, and teacher profiles; still actively building this one. <b>Jon Kabat-Zinn Meditations
-      (JKZ)</b> — marketing site and the Teams B2B subscriptions portal. <b>Hjärnfokus</b> — upgraded the Flutter app
-      across major version boundaries and replaced outdated dependencies.</p>
+      <p><b>Practice Self-Compassion (MSC)</b> — own end-to-end delivery: Laravel REST APIs from scratch, CodeIgniter →
+      Laravel migration, schema design, course/content/trainer features, testing, and Railway deployment.
+      <b>Automated changelog pipeline</b> — built the release-notes automation that runs on every production deploy: a
+      GitHub Action parses commits and PR titles, writes a formatted changelog to Confluence via REST API, and fires a
+      Cloudflare Workers notification, with retries and alerting; non-blocking by design, so a changelog failure never
+      blocks the Railway deploy. <b>JKZ</b> — B2B Teams subscriptions portal and marketing site. <b>Hjärnfokus</b> —
+      modernised Flutter app integrations across major version boundaries.</p>
     </div>
 
     <div class="exp-item">
       <div class="exp-head">
         <span class="exp-title">PHP Developer <span class="exp-co">— Crontus Pty Ltd, Remote (Australia)</span></span>
-        <span class="exp-when">2024 — 2025</span>
+        <span class="exp-when">04/2024 — 04/2025</span>
       </div>
       <p><b>MyOffice</b> — migrated a nested, multi-package CodeIgniter codebase to Laravel, re-implementing logic
-      shared across several internal projects; delivering it converted the contract into a full-time offer.</p>
+      shared across several internal projects and improving structure, testing readiness, and maintainability. Balanced
+      planned feature work with production support in Agile sprints; delivering the migration converted the contract
+      into a full-time offer.</p>
     </div>
 
     <div class="exp-item">
       <div class="exp-head">
         <span class="exp-title">Web Developer <span class="exp-co">— MRN Technologies Pvt. Ltd., India</span></span>
-        <span class="exp-when">2022 — 2024</span>
+        <span class="exp-when">06/2022 — 04/2024</span>
       </div>
-      <p><b>Clinoa</b> — owned the architecture and UI/UX for a dental EMR (admin site, marketing site, patient/doctor
-      mobile APIs) with full role-based access across the admin panel and Flutter app. <b>Fishball ERP</b> — designed
-      the initial architecture for a manufacturing ERP spanning raw materials through delivery, plus B2B/B2C apps and
-      a driver tracking system. Also shipped a location-based tourist event app (<b>TopAlliance</b>) and two Laravel
-      6→8 migrations (<b>GroceryMart, Service get4Fix</b>).</p>
+      <p><b>Clinoa</b> — owned a dental EMR end to end: MySQL schema design, RBAC, admin and marketing UIs, and the
+      REST APIs behind the Flutter patient/doctor apps, through to production support. <b>Fishball ERP</b> — architected
+      a manufacturing ERP spanning raw materials through delivery: data models, supply-chain workflows, B2B/B2C apps,
+      and driver tracking. Also shipped <b>TopAlliance</b> appointment and event-discovery APIs and two Laravel 6 → 8
+      modernisations (<b>GroceryMart</b>, <b>Service get4Fix</b>).</p>
     </div>
 
     <div class="exp-item">
       <div class="exp-head">
         <span class="exp-title">Software Engineer <span class="exp-co">— eSales Software Solutions LLP, India</span></span>
-        <span class="exp-when">2018 — 2020</span>
+        <span class="exp-when">06/2018 — 10/2020</span>
       </div>
-      <p><b>SchoolSoftERP — Marks Module</b> — owned it end to end for two years: exams, question papers, student
-      marks and pivot tables, redesigned foreign keys, fresh REST APIs, the full admin frontend, and the platform's
-      first Firebase push notifications; earned Employee of the Month. <b>RatheShopper</b> — rebuilt a local
-      freight-rate tool into a multi-carrier global shipping-rate estimator, driving a ~75% lift in the client's
-      transaction volume. <b>Sri Sathya Sai Balvikas</b> — migrated hundreds of pages from Core PHP to WordPress and
-      shipped the e-card feature.</p>
+      <p><b>SchoolSoftERP — Marks Module</b> — owned it end to end for two years: exams, question papers, student marks
+      and pivot tables, schema and foreign-key redesign, fresh REST APIs, the full admin frontend, and the platform's
+      first Firebase push notifications; earned Employee of the Month. <b>RatheShopper</b> — rebuilt a local freight-rate
+      tool into a multi-carrier global shipping-rate estimator, driving a ~75% lift in the client's transaction volume.
+      <b>Sri Sathya Sai Balvikas</b> — migrated hundreds of pages from Core PHP to WordPress with custom themes.</p>
     </div>
   </section>
 
@@ -254,12 +260,24 @@
 
     <div class="proj-item">
       <div class="proj-head">
+        <span class="proj-title">Automated Changelog Pipeline</span>
+        <span class="proj-status">in production</span>
+      </div>
+      <p>Merge to main triggers a GitHub Action that extracts commits since the last successful production release,
+      formats a grouped changelog, writes it to a living Confluence "Releases" page via REST API, and notifies the team
+      through a Cloudflare Worker — then the Railway deploy proceeds. Environment-aware and best-effort by design: the
+      changelog is non-critical, so failures retry and alert rather than block the deploy.</p>
+      <div class="stack"><b>Stack</b> — GitHub Actions · Confluence REST API · Cloudflare Workers · Railway</div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-head">
         <span class="proj-title">Practice Self-Compassion — Meditation Platform</span>
         <span class="proj-status">in active development</span>
       </div>
-      <p>Rebuilt the backend from CodeIgniter to Laravel end to end, then grew the frontend into a full
-      course-creation and course-study platform — blogs, audio practices, teacher profiles.</p>
-      <div class="stack"><b>Stack</b> — Laravel · REST API · Course Platform</div>
+      <p>Rebuilt the backend from CodeIgniter to Laravel end to end — API and schema migration — then grew the frontend
+      into a full course-creation and course-study platform with blogs, audio practices, and teacher profiles.</p>
+      <div class="stack"><b>Stack</b> — Laravel · MySQL · REST API · Railway</div>
     </div>
 
     <div class="proj-item">
@@ -267,19 +285,9 @@
         <span class="proj-title">Clinoa — Dental EMR &amp; Scheduling</span>
         <span class="proj-status">live</span>
       </div>
-      <p>Owned the architecture and UI/UX for a dental practice's admin site, marketing site, and patient/doctor
-      mobile APIs, with full role-based access across the admin panel and Flutter app.</p>
-      <div class="stack"><b>Stack</b> — MySQL · REST API · Flutter</div>
-    </div>
-
-    <div class="proj-item">
-      <div class="proj-head">
-        <span class="proj-title">Fishball ERP — Inventory &amp; Manufacturing</span>
-        <span class="proj-status" style="color:var(--slate)">shipped</span>
-      </div>
-      <p>Designed the initial architecture for a manufacturing ERP spanning raw materials through delivery,
-      plus B2B/B2C apps and a driver packaging-and-tracking system.</p>
-      <div class="stack"><b>Stack</b> — Laravel · MySQL · Figma</div>
+      <p>Owned the architecture and UI/UX for a dental practice's admin site, marketing site, and patient/doctor mobile
+      APIs, with role-based access enforced across the admin panel and the Flutter app.</p>
+      <div class="stack"><b>Stack</b> — Laravel · MySQL · RBAC · REST API · Flutter</div>
     </div>
 
     <div class="proj-item">
@@ -287,19 +295,19 @@
         <span class="proj-title">MyOffice — Legacy Platform Migration</span>
         <span class="proj-status" style="color:var(--slate)">shipped</span>
       </div>
-      <p>Migrated a nested, multi-package CodeIgniter codebase to Laravel, re-implementing logic shared
-      across several internal projects — work that led to a full-time offer.</p>
-      <div class="stack"><b>Stack</b> — Laravel · CodeIgniter Migration</div>
+      <p>Migrated a nested, multi-package CodeIgniter codebase to Laravel, re-implementing logic shared across several
+      internal projects — work that converted the contract into a full-time offer.</p>
+      <div class="stack"><b>Stack</b> — Laravel · CodeIgniter → Laravel · Eloquent</div>
     </div>
 
     <div class="proj-item">
       <div class="proj-head">
-        <span class="proj-title">SchoolSoftERP — Marks Module</span>
-        <span class="proj-status" style="color:var(--slate)">shipped</span>
+        <span class="proj-title">AI Agent + Jira Integration</span>
+        <span class="proj-status" style="color:var(--slate)">prototype</span>
       </div>
-      <p>Owned the module end to end for two years — exams, question papers, marks and pivot tables,
-      redesigned foreign keys, fresh REST APIs, and the platform's first Firebase push notifications.</p>
-      <div class="stack"><b>Stack</b> — PHP · REST API · Firebase</div>
+      <p>Automated issue workflows using AI agent patterns — classification, tool-calling, and structured output — to
+      cut manual triage. Paired with a Python support-agent prototype built around clean OOP design.</p>
+      <div class="stack"><b>Stack</b> — Python · AI agent patterns · Jira API</div>
     </div>
 
     <div class="proj-item">
@@ -307,20 +315,29 @@
         <span class="proj-title">RatheShopper — Shipping Rate Estimator</span>
         <span class="proj-status" style="color:var(--slate)">shipped</span>
       </div>
-      <p>Rebuilt a local freight-rate tool into a multi-carrier global shipping-rate estimator, driving
-      roughly a 75% lift in the client's transaction volume.</p>
-      <div class="stack"><b>Stack</b> — PHP · Rate Engine · Third-party APIs</div>
+      <p>Rebuilt a local freight-rate tool into a multi-carrier global shipping-rate estimator, driving roughly a 75%
+      lift in the client's transaction volume.</p>
+      <div class="stack"><b>Stack</b> — PHP · Rate engine · Third-party carrier APIs</div>
     </div>
   </section>
 
   <section>
     <h2><span>//</span> skills</h2>
     <div class="skills-grid">
-      <div class="k">Languages</div><div class="v">JavaScript (ES6+), Python, PHP</div>
-      <div class="k">Backend &amp; APIs</div><div class="v">Node.js, Express.js, Laravel, REST API design, Token-based auth, MySQL</div>
-      <div class="k">Frontend</div><div class="v">HTML5, CSS3, Bootstrap, jQuery, Flutter, React (learning)</div>
-      <div class="k">Tools &amp; Practices</div><div class="v">Git, GitHub, Linux, Jira, Confluence, Figma, Agile / Scrum</div>
-      <div class="k">AI-Assisted Workflow</div><div class="v">Claude, GitHub Copilot, Augment, Grok, AI image generation, Figma-to-HTML tooling</div>
+      <div class="k">Languages</div><div class="v">PHP, JavaScript (ES6+), Python, TypeScript (learning)</div>
+      <div class="k">Frameworks</div><div class="v">Laravel, CodeIgniter, Symfony, Node.js, Express.js, Flutter, React / Next.js (learning), FastAPI (in progress)</div>
+      <div class="k">Databases &amp; Data</div><div class="v">MySQL, Eloquent ORM, schema design, query optimisation, indexing, migrations, data integrity</div>
+      <div class="k">APIs &amp; Security</div><div class="v">REST API design, RBAC, authentication &amp; authorisation, token-based auth, webhooks, Firebase, third-party integrations</div>
+      <div class="k">Delivery &amp; Ops</div><div class="v">Git, GitHub Actions, CI/CD, Railway, Cloudflare Workers, Confluence REST API, Linux, Jira, Agile / Scrum</div>
+      <div class="k">AI &amp; Automation</div><div class="v">AI-assisted development (Claude, Copilot, Augment, Grok), AI agent workflows, Jira automation agent, Figma-to-HTML tooling</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>//</span> education &amp; languages</h2>
+    <div class="skills-grid">
+      <div class="k">Education</div><div class="v">B.Tech, Biomedical Engineering — Rajiv Gandhi College of Engineering &amp; Technology, Puducherry (2014 – 2018)</div>
+      <div class="k">Languages</div><div class="v">English (professional) · Tamil (native)</div>
     </div>
   </section>
 
