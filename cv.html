@@ -142,6 +142,22 @@
     body{ background:#fff; }
     .doc-eyebrow a{ display:none; }
   }
+
+  /* download button */
+  .dl-btn{
+    font-family:"JetBrains Mono", monospace; font-size:0.73rem;
+    background:var(--violet); color:#fff !important;
+    padding:6px 13px; border-radius:20px; text-decoration:none !important;
+    border:none !important; display:inline-block; white-space:nowrap;
+  }
+  .dl-btn:hover{ background:color-mix(in srgb, var(--violet) 82%, black); color:#fff !important; }
+  .dl-btn.ghost{
+    background:transparent; color:var(--violet) !important;
+    border:1px solid var(--violet) !important;
+  }
+  .dl-btn.ghost:hover{ background:var(--violet); color:#fff !important; }
+  .doc-eyebrow .actions{ display:flex; gap:9px; align-items:center; flex-wrap:wrap; }
+  @media print{ .dl-btn, .doc-eyebrow .actions{ display:none !important; } }
 </style>
 <style>
   .page{ max-width:820px; }
@@ -189,6 +205,60 @@
   @media print{
     .deep{ break-inside:avoid; }
   }
+
+  /* ---- print / PDF layout ---- */
+  @page{ size:A4; margin:11mm 12mm; }
+  @media print{
+    html{ font-size:14px; }
+    body{
+      background:#fff !important; background-image:none !important;
+      color:#15141F; line-height:1.42;
+    }
+    :root{
+      --paper:#fff; --surface:#fff; --ink:#15141F; --ink-soft:#2E2D40;
+      --slate:#5A5F72; --line:#C9CAD9; --violet:#5B21C0; --green:#047857;
+    }
+    .page{ max-width:none !important; margin:0; padding:0 !important; }
+    .doc-eyebrow{ display:none !important; }
+    header.id{ padding-bottom:11px; margin-bottom:15px; border-bottom-width:1.5px; }
+    h1{ font-size:1.65rem; margin-bottom:3px; }
+    .role{ font-size:0.82rem; margin-bottom:8px; }
+    .contact-row{ font-size:0.68rem; gap:3px 7px; }
+    section{ margin-bottom:15px; }
+    h2{ font-size:0.68rem; margin-bottom:8px; padding-bottom:4px; }
+    p{ margin-bottom:6px; }
+    .lede{ font-size:0.9rem; max-width:none; }
+    .strengths{ gap:8px 20px; }
+    .strengths .item b{ font-size:0.85rem; margin-bottom:2px; }
+    .strengths .item p{ font-size:0.78rem; }
+    .exp-item{ padding-bottom:10px; margin-bottom:10px; break-inside:avoid; }
+    .exp-head{ margin-bottom:3px; gap:10px; }
+    .exp-title{ font-size:0.92rem; }
+    .exp-when{ font-size:0.7rem; }
+    .exp-item p{ font-size:0.83rem; max-width:none; }
+    .exp-sub{ font-size:0.68rem !important; margin-bottom:5px !important; }
+    .proj-item{ padding-bottom:9px; break-inside:avoid; }
+    .proj-head{ margin-bottom:2px; }
+    .proj-title{ font-size:0.88rem; }
+    .proj-status{ font-size:0.66rem; }
+    .proj-item p{ font-size:0.83rem; margin-bottom:3px; max-width:none; }
+    .stack{ font-size:0.7rem; }
+    .skills-grid{ grid-template-columns:128px 1fr; gap:6px 14px; }
+    .skills-grid .k{ font-size:0.68rem; }
+    .skills-grid .v{ font-size:0.83rem; }
+    ul.bullets{ gap:4px; }
+    ul.bullets li{ font-size:0.83rem; padding-left:13px; max-width:none; }
+    ol.steps li{ font-size:0.82rem; margin-bottom:2px; max-width:none; }
+    .deep{ padding:13px 15px; margin-bottom:12px; break-inside:avoid; }
+    .deep h3{ font-size:0.95rem; }
+    .deep .meta{ font-size:0.67rem; margin-bottom:9px; }
+    .deep h4{ font-size:0.65rem; margin:10px 0 4px; }
+    .deep p{ font-size:0.83rem; margin-bottom:5px; max-width:none; }
+    .flow{ font-size:0.7rem; padding:8px 10px; line-height:1.65; }
+    .outcome{ font-size:0.83rem; margin-top:9px; padding-top:8px; }
+    footer{ margin-top:16px; padding-top:9px; font-size:0.66rem; }
+    a{ text-decoration:none; }
+  }
 </style>
 </head>
 <body>
@@ -197,7 +267,11 @@
 
   <p class="doc-eyebrow">
     <span class="path">priyadharshini.cv</span>
-    <span><a href="resume.html">1-page résumé ↗</a> &nbsp; <a href="index.html">full portfolio ↗</a></span>
+    <span class="actions">
+      <a href="index.html">full portfolio ↗</a>
+      <a href="resume.html">1-page résumé ↗</a>
+      <a class="dl-btn" href="Priyadharshini_Arumugam_CV.pdf" download>Download PDF ↓</a>
+    </span>
   </p>
 
   <header class="id">
@@ -211,6 +285,8 @@
       <a href="https://www.linkedin.com/in/priyadharshini-arumugam-a43973229" target="_blank" rel="noopener">linkedin.com/in/priyadharshini-arumugam-a43973229</a>
       <span class="sep">/</span>
       <a href="https://github.com/Priya-MRN" target="_blank" rel="noopener">github.com/Priya-MRN</a>
+      <span class="sep">/</span>
+      <a href="https://priya-mrn.github.io/portfolio/" target="_blank" rel="noopener">priya-mrn.github.io/portfolio</a>
       <span class="sep">/</span>
       <span>Puducherry, India — open to remote</span>
     </div>

@@ -3,7 +3,10 @@
 **Full-Stack Software Engineer · Backend-leaning · 6+ years of production ownership**
 Puducherry, India · Open to remote
 
+**Live site: [priya-mrn.github.io/portfolio](https://priya-mrn.github.io/portfolio/)**
+
 [Portfolio](index.html) · [Résumé (1 page)](resume.html) · [Detailed CV](cv.html)
+Download: [Résumé PDF](Priyadharshini_Arumugam_Resume.pdf) · [CV PDF](Priyadharshini_Arumugam_CV.pdf)
 [Email](mailto:priyadharshiniarumugam52@gmail.com) · [LinkedIn](https://www.linkedin.com/in/priyadharshini-arumugam-a43973229) · [GitHub](https://github.com/Priya-MRN) · [HackerRank](https://www.hackerrank.com/profile/priyadharshin782)
 
 ---
@@ -157,6 +160,16 @@ A static site, no build step — open `index.html` directly or serve the folder.
 | `index.html` | Portfolio landing page — about, experience, selected work, skills |
 | `resume.html` | One-page résumé, print-friendly (⌘/Ctrl + P → Save as PDF) |
 | `cv.html` | Detailed CV with full experience and project deep-dives, print-friendly |
+| `Priyadharshini_Arumugam_Resume.pdf` | Downloadable résumé (2 pages), generated from `resume.html` |
+| `Priyadharshini_Arumugam_CV.pdf` | Downloadable CV (4 pages), generated from `cv.html` |
+| `build-pdf.ps1` | Regenerates both PDFs from the HTML |
 
-Both document pages are styled for print, so saving either to PDF from the browser produces a clean,
-attachable file.
+Both document pages carry a print stylesheet, so the PDFs match the pages exactly — no separate source to
+keep in sync. After editing `resume.html` or `cv.html`, regenerate and commit the PDFs:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File build-pdf.ps1
+```
+
+The script uses headless Chrome (falling back to Edge). Without either, `Ctrl+P` → *Save as PDF* from the
+browser gives the same result.
